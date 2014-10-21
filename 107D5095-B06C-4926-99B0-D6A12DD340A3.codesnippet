@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>q-createView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)createView
+{
+    self.title = @"&lt;##&gt;";
+    
+    protectPwd1 = [UITextField groupCellTextFieldActionReturnWithType:LKLTextFieldTypePassword placeholder:@"&lt;##&gt;"];
+    protectPwd1.textColor = [UIColor grayColor];
+    protectPwd1.delegate = self;
+    
+    protectPwd2 = [UITextField groupCellTextFieldActionReturnWithType:LKLTextFieldTypePassword placeholder:@"&lt;##&gt;"];
+    protectPwd2.textColor = [UIColor grayColor];
+    protectPwd2.delegate = self;
+    
+    tableView = [ViewTool myGroupedTableViewWithFrame:CGRectMake(0, 0, kScreenWidth, kViewHeight-50)];
+    tableView.dataSource = self;
+    tableView.delegate = self;
+    tableView.touchUpInsideDelegate = self;
+    
+    UILabel *viewhead = [UILabel lableFrame:CGRectMake(10, 5, kScreenWidth-20, 65) text:[NSString stringWithFormat:@"您的%@手机号将与拉卡拉的商户绑定，为了保证您的信息安全，请设置您的保护密码，并请牢记此密码。",[NSString notNull:[User currentUser].loginName]]textSize:14];
+    viewhead.numberOfLines = 0;
+    [tableView setTableHeaderView:viewhead];
+    
+    [self.view addSubview:tableView];
+    
+    [self addNewNextButton:CGRectMake(0, kViewHeight-50, kScreenWidth, 50)];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>107D5095-B06C-4926-99B0-D6A12DD340A3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速创建带有tableView包含textField和下一步按钮的视图</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createViewWithTableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

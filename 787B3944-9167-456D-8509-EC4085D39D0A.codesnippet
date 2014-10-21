@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>q-createCell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITableViewCell *cell = nil;
+    cell = [[[UITableViewCell alloc] init] autorelease];
+    cell.accessoryType = UITableViewCellAccessoryNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    UILabel *cellLb = [UILabel groupCellLeftLabel:@"&lt;##&gt;"];
+    cellLb.textAlignment = NSTextAlignmentRight;
+    cellLb.textColor = [UIColor colorWithRed:90/255.0 green:157/255.0 blue:246/255.0 alpha:1.0];
+    [cell addSubview:cellLb];
+    
+    if (indexPath.row == 0) {
+        [cell addSubview:&lt;##&gt;];
+    }else{
+        [cell addSubview:&lt;##&gt;];
+    }
+    return cell;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>787B3944-9167-456D-8509-EC4085D39D0A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速创建Cell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createCell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

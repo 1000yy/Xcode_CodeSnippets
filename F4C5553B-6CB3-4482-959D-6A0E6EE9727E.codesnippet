@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>q-tFDelegateWithCustomTableViewDelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark ----- UITextField Delegate
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    // TODO:处理键盘遮挡
+    
+    return YES;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [textField textFieldDidEndEditing];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self touchUpInsideEndedCustomTableView:nil];
+    return YES;
+}
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self touchUpInsideEndedCustomTableView:nil];
+}
+#pragma mark ----- Custom TableView Delegate
+- (void)touchUpInsideEndedCustomTableView:(CustomTableView *)customTableView
+{
+    
+    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];//隐藏键盘
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F4C5553B-6CB3-4482-959D-6A0E6EE9727E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>实现 CustomTableView 自定义的代理方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TextFieldDelegateWithCustomTableViewDelegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
