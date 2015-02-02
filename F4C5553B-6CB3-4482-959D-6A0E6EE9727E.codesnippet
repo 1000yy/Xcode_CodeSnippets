@@ -9,7 +9,13 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark ----- UITextField Delegate
+	<string>- (void)otherShouldReturn
+{
+    [self touchUpInsideEndedCustomTableView:nil];
+    return;
+}
+
+#pragma mark ----- UITextField Delegate
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
