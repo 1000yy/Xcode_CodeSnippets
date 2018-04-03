@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>q-vf</string>
+	<string>pushctr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#function Name#&gt;
-{
-    &lt;#content#&gt;
-}</string>
+	<string>EPAssistantViewController *ctr = [[EPAssistantViewController alloc] initWithNibName:@"EPAssistantViewController" bundle:nil];
+    ctr.title = @"&lt;#标题#&gt;";
+    ctr.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:ctr animated:YES];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4099E4ED-228A-4F4D-A679-726C44F6B123</string>
+	<string>3CEB2FA9-8023-485D-B6D3-C22ABCBD4B70</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速创建方法，返回类型为空</string>
+	<string>从xib跳转控制器</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>void function</string>
+	<string>从xib跳转控制器</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

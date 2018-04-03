@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>q-vf</string>
+	<string>addtap</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>StringOrComment</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#function Name#&gt;
-{
-    &lt;#content#&gt;
-}</string>
+	<string>[_serviceImageView3 addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openCharacteristicServiceWeb:)]];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4099E4ED-228A-4F4D-A679-726C44F6B123</string>
+	<string>6B04C63B-8E9F-4852-BBD0-3732361B1915</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速创建方法，返回类型为空</string>
+	<string>添加点击事件</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>void function</string>
+	<string>添加点击事件</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

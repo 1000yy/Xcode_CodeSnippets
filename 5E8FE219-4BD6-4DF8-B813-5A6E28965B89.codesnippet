@@ -3,24 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>q-vf</string>
+	<string>pstr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#function Name#&gt;
-{
-    &lt;#content#&gt;
-}</string>
+	<string>@property (copy, nonatomic) NSString *&lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4099E4ED-228A-4F4D-A679-726C44F6B123</string>
+	<string>5E8FE219-4BD6-4DF8-B813-5A6E28965B89</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>快速创建方法，返回类型为空</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>void function</string>
+	<string>NSString  属性</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,24 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>q-vf</string>
+	<string>createLine</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#function Name#&gt;
-{
-    &lt;#content#&gt;
-}</string>
+	<string>UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWith, 0.5)];
+    lineView.backgroundColor = [UIColor colorWithHexString:@"e6e6e6"];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4099E4ED-228A-4F4D-A679-726C44F6B123</string>
+	<string>F246D12B-681A-46B7-BBA4-ED94FCFF6C45</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>快速创建方法，返回类型为空</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>void function</string>
+	<string>创建一条分隔线</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

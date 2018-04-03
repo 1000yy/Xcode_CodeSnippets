@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>eprequ</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[[EPRequestClient sharedEPClient] requestRecommendServiceWithParams:params success:^(id dataDict, int status, NSString *msg) {
+        NSArray *ary = dataDict;
+        if (_offset == 0) {
+            [_dataArray removeAllObjects];
+            [_dataArray addObjectsFromArray:ary];
+            
+            if (_dataArray.count == 0) {
+                //                [_loadCustomView showWithNoData];
+                [_loadCustomView dismiss];
+            }else
+            {
+                [_loadCustomView dismiss];
+            }
+            
+        }else
+        {
+            [_dataArray addObjectsFromArray:ary];
+            
+        }
+        [_tableView reloadData];
+        
+        if (_dataArray.count &gt;= msg.integerValue) {
+            //没有更多数据  隐藏加载更多的功能
+            self.tableView.footer.hidden = YES;
+            
+            [self.tableView setTableFooterView:_noMoreFooterView];
+        }else
+        {
+            [self.tableView setTableFooterView:nil];
+            self.tableView.footer.hidden = NO;
+        }
+        
+        [SVProgressHUD dismiss];
+        [self.tableView.header endRefreshing];
+        [self.tableView.footer endRefreshing];
+
+        
+    } failure:^(id dataDict, int status, NSString *msg) {
+        if ([msg rangeOfString:@"-10086"].location != NSNotFound) {
+            
+            [SVProgressHUD dismiss];
+            [_loadCustomView dismiss];
+            return ;
+        }
+        [self.tableView.header endRefreshing];
+        [self.tableView.footer endRefreshing];
+        if (_offset &gt; 0) {
+            _offset-=kMaxLoadMore;
+        }
+        if ([msg isEqualToString:@"RequestError"])
+            [_loadCustomView showWithError];
+        else
+        {
+            [_loadCustomView dismiss];
+            //            [SVProgressHUD showInfoWithStatus:msg maskType:SVProgressHUDMaskTypeBlack];
+        }
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>43A60839-18D7-443A-9ADD-CA48A4194FAB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ep网络请求</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ep网络请求</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

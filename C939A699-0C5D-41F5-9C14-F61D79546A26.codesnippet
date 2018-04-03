@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>compare</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSDecimalNumber *balanceNum = [NSDecimalNumber decimalNumberWithString:[UserInfoManager sharedUserInfoManager].userInfoModel.balance];
+            NSComparisonResult result = [balanceNum compare:value];
+            
+            if (result == NSOrderedAscending){
+                _payYueCell.detailTextLabel.text = @"余额不足,请充值";
+            }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C939A699-0C5D-41F5-9C14-F61D79546A26</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>比较金额等</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>比较带小数点的数</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

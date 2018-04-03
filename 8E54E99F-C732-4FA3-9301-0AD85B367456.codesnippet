@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sswr</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSDecimalNumberHandler *bankers = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundBankers scale:2 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
+            
+            NSDecimalNumber *a = [NSDecimalNumber decimalNumberWithString:_task_cash];
+            NSDecimalNumber *b = [NSDecimalNumber decimalNumberWithString:_numberField.text];
+            NSDecimalNumber *divide = [a decimalNumberByDividingBy:b];
+            NSDecimalNumber *value = [divide decimalNumberByRoundingAccordingToBehavior:bankers]; // 四舍五入计算后的结果
+            
+            NSString *valueStr = [value description];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8E54E99F-C732-4FA3-9301-0AD85B367456</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>四舍五入计算并保留2位小数</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
