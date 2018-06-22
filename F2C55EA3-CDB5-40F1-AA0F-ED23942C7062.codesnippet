@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>inquireNet</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#替换model#&gt; *viewModel = [[&lt;#替换model#&gt; alloc] init];
+    @weakify(self);
+    [RACObserve(viewModel, postStatus) subscribeNext:^(NSNumber* x) {
+        @strongify(self);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self handleNetEvent:x.intValue andMessage:viewModel.message];
+        });
+    }];
+    [viewModel inquireSMSCodeWithMobile:_phoneTF.text type:@"register_mobile" Success:^(id dataDict, int status, NSString *msg) {
+        [ToastUtils showSuccessMessage:msg];
+    } andFail:^(id dataDict, int status, NSString *msg) {
+        
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F2C55EA3-CDB5-40F1-AA0F-ED23942C7062</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>请求网络</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>inquireNet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pstri</string>
+	<string>strw</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (copy, nonatomic) NSString *&lt;#name#&gt;;</string>
+	<string>[NSString stringWithFormat:@"%@", &lt;#输入#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5E8FE219-4BD6-4DF8-B813-5A6E28965B89</string>
+	<string>A60D4CBB-51BB-4ED3-B20E-B444A8B0074F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速输入 stringWithFormat </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSString  属性</string>
+	<string>快速输入 stringWithFormat </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pstri</string>
+	<string>zsd</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (copy, nonatomic) NSString *&lt;#name#&gt;;</string>
+	<string>// &lt;SZQ&gt; ------ &lt;#注释的内容#&gt; ------</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5E8FE219-4BD6-4DF8-B813-5A6E28965B89</string>
+	<string>E8A835C0-33CC-4511-ABC7-EE10ED5950DA</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSString  属性</string>
+	<string>// 注释</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

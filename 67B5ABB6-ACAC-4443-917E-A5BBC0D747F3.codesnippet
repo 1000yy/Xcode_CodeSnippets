@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createtextf</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITextField *field = [[UITextField alloc] initWithFrame:CGRectMake(10, 0, content.frame.size.width - 20, content.height)];
+    field.backgroundColor = [UIColor clearColor];
+    field.textColor = kTextLabelColor;
+    field.font = systemFont(14);
+    field.placeholder = @"说点什么...";
+    field.clearButtonMode = UITextFieldViewModeAlways;
+    [content addSubview:field];
+    [allView addSubview:content];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>67B5ABB6-ACAC-4443-917E-A5BBC0D747F3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建 UITextField</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建 UITextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

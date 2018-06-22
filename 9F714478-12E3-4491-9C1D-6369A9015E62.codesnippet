@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pstri</string>
+	<string>showSuc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (copy, nonatomic) NSString *&lt;#name#&gt;;</string>
+	<string>[ToastUtils showSuccessMessage:msg];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5E8FE219-4BD6-4DF8-B813-5A6E28965B89</string>
+	<string>9F714478-12E3-4491-9C1D-6369A9015E62</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>提示正确</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSString  属性</string>
+	<string>showSuccess</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

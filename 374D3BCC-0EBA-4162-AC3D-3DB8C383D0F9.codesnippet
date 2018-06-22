@@ -3,19 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pstri</string>
+	<string>poptoc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (copy, nonatomic) NSString *&lt;#name#&gt;;</string>
+	<string>for (UIViewController *vc in self.navigationController.viewControllers) {
+    if ([vc isKindOfClass:[&lt;#特定页面#&gt; class]]) {
+                    [self.navigationController popToViewController:vc animated:YES];
+                }
+            }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5E8FE219-4BD6-4DF8-B813-5A6E28965B89</string>
+	<string>374D3BCC-0EBA-4162-AC3D-3DB8C383D0F9</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>退出到特定页面</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSString  属性</string>
+	<string>PopToCustomVC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createBtn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = CGRectMake(0, 0, 80, 44);
+        btn.right = ScreenWith;
+        [btn setTitle:@"退货须知" forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"tipIcon"] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor colorWithHexString:@"#56617D"] forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(tipsAction:) forControlEvents:UIControlEventTouchUpInside];
+        [btn.titleLabel setFont:systemFont(13)];
+        [headerView addSubview:btn];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C3D15F32-C583-455B-A22D-B90736E4BBB3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速创建一个 UIButton</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

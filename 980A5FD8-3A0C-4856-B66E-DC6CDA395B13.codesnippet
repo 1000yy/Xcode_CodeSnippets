@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>EPTalPersonPageViewController *vc = [[UIStoryboard storyboardWithName:@"TalentViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"EPTalPersonPageViewController"];
+	<string>EPTalPersonPageViewController *vc = [[UIStoryboard storyboardWithName:@"UserCenterStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"EPTalPersonPageViewController"];
     
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];</string>
