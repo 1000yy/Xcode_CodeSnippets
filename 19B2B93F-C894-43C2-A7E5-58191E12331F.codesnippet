@@ -3,21 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ws</string>
+	<string>my_defaul_dispatch</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    &lt;#耗时操作#&gt;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        &lt;#主线程#&gt;
+    });
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0493506F-0580-45EC-A88D-FB7599FB2BD7</string>
+	<string>19B2B93F-C894-43C2-A7E5-58191E12331F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>weak self 快速创建</string>
+	<string>全局异步线程并回归主线程</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weak self 快速创建</string>
+	<string>全局异步线程并回归主线程</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

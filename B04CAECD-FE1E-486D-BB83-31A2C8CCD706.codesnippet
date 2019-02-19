@@ -3,21 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ws</string>
+	<string>my_getView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>- (UIView *)&lt;#UIView view#&gt; {
+    if (!_&lt;#UIView view#&gt;) {
+        _&lt;#UIView view#&gt; = [[UIView alloc]init];
+    }
+    return _&lt;#UIView view#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0493506F-0580-45EC-A88D-FB7599FB2BD7</string>
+	<string>B04CAECD-FE1E-486D-BB83-31A2C8CCD706</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>weak self 快速创建</string>
+	<string>view的get方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weak self 快速创建</string>
+	<string>view的get方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

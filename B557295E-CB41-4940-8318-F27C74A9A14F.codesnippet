@@ -3,19 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zsd</string>
+	<string>my_funsIns</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make) { &lt;#code#&gt; }];</string>
+	<string>- (&lt;#return#&gt;)&lt;#funcName#&gt; {
+&lt;#doSomeThing#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E8A835C0-33CC-4511-ABC7-EE10ED5950DA</string>
+	<string>B557295E-CB41-4940-8318-F27C74A9A14F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>实例方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>// 注释</string>
+	<string>实例方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

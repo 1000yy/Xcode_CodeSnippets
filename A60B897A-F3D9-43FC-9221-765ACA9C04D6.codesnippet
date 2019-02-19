@@ -3,19 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zsd</string>
+	<string>my_shadow</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make) { &lt;#code#&gt; }];</string>
+	<string>&lt;#view#&gt;.layer.shadowColor = &lt;#color#&gt;.CGColor;
+&lt;#view#&gt;.layer.shadowRadius = 3;
+&lt;#view#&gt;.layer.shadowOffset = CGSizeMake(0, 2);
+&lt;#view#&gt;.layer.shadowOpacity = 0.1;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E8A835C0-33CC-4511-ABC7-EE10ED5950DA</string>
+	<string>A60B897A-F3D9-43FC-9221-765ACA9C04D6</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>view的阴影</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>// 注释</string>
+	<string>view的阴影</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
